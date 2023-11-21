@@ -13,7 +13,6 @@ window.addEventListener("load", () => {
         "#802E40", "#7A3C4F", "#744A5F", "#6D586E", "#68687E", "#62778E", "#5C859C", "#5594AD", "#50A3BC"
     ];
 
-    let shuffledArray = [];
     const cellElements = document.querySelectorAll(".cell");
 
     // Colors assigned to each cell
@@ -25,7 +24,7 @@ window.addEventListener("load", () => {
 
     // Shuffling colors for on the game grid
     function shuffleSolution() {
-        let shuffledColors = solutionArray.sort(() => Math.random() - 0.5);
+        solutionArray.sort(() => Math.random() - 0.5);
         assignColorsToCells();
         gameSolution();
     }
@@ -35,15 +34,6 @@ window.addEventListener("load", () => {
         cellElements.forEach((cell, index) => {
             const color = solutionArray[index];
             cell.dataset.color = color;
-
-            if (cell.style.backgroundColor === color) {
-                cell.draggable = false;
-                cell.classList.add('correct');
-                addCheckmarkToCell(cell);
-            } else {
-                cell.draggable = true;
-                cell.classList.remove('correct');
-            }
         });
     }
 

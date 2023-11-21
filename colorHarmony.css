@@ -3,7 +3,7 @@ body, .navbar{
 
 }
 
-h1, h4{
+h1, h6{
     text-align: center;
 }
 
@@ -28,9 +28,6 @@ h1, h4{
     width: 100%;
 }
   
-.navbar-toggler {
-    margin-right: 2;
-}
 
 .cell {
     min-width: 50px;
@@ -48,14 +45,18 @@ h1, h4{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  visibility: hidden; /* Initially hide the checkmark */
+  visibility: hidden; 
 }
 
-.cell.correct {
-  background-color: green; /* Style for correct cells */
-}
 
 .cell.correct .checkmark {
-  visibility: visible; /* Show the checkmark for correct cells */
+  visibility: visible;
 }
   
+#solution {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
