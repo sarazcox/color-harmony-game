@@ -6,12 +6,16 @@ body, .navbar{
 h1, h6{
     text-align: center;
 }
-
-.center, .container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.container, #solution {
+    margin: 0 auto;
     width: 50%;
+    padding-right: 0; /* Add this line to remove right padding */
+    padding-left: 0;
+
   }
 .navbar-header {
     width: 100%;
@@ -28,7 +32,6 @@ h1, h6{
     width: 100%;
 }
   
-
 .cell {
     min-width: 50px;
     min-height: 50px;
@@ -38,25 +41,4 @@ h1, h6{
     margin: 0;
     
 }
-
-.checkmark {
-  font-size: 24px;
-  color: black;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  visibility: hidden; 
-}
-
-
-.cell.correct .checkmark {
-  visibility: visible;
-}
   
-#solution {
-  
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
