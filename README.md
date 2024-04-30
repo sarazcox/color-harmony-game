@@ -1,3 +1,5 @@
+https://sarazcox.github.io/color-harmony-game/
+
 # color-harmony-game
 Game created with HTML, CSS, Bootstrap and JavaScript.
  -- 
