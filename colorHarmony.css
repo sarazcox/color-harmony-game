@@ -7,16 +7,33 @@ h1, h6{
     text-align: center;
 }
 .row {
-  margin-right: 0;
-  margin-left: 0;
+  margin: 0;
+
+
 }
-.container, #solution {
+
+div.row {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+    
+}
+.container{
     margin: 0 auto;
     width: 50%;
-    padding-right: 0; /* Add this line to remove right padding */
+    padding-right: 0;
     padding-left: 0;
-
+    
   }
+
+#solution {
+    margin: 0 auto;
+    width: 50%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
 .navbar-header {
     width: 100%;
 }
@@ -35,10 +52,10 @@ h1, h6{
 .cell {
     min-width: 50px;
     min-height: 50px;
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 50px;
+    max-height: 50px;
     padding: 0;
     margin: 0;
-    
+    display: block;
 }
   
